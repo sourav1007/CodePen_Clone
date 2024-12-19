@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { IoSearch } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 import { BsFillPinFill } from "react-icons/bs";
 import { FaRegSmileWink } from "react-icons/fa";
@@ -40,9 +41,12 @@ function Header(props) {
 
       </div>
       <div className=' lg:hidden w-full flex justify-between max-[739px]:gap-2  items-center bg-black p-2'>
+        <Link to="/">
         <div>
           <FaCodepen className='text-4xl text-white' />
         </div>
+        </Link>
+        
         <div onClick={()=>{
             console.log("clickedd")
             props.setShowMenu(!props.showMenu);

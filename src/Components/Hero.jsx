@@ -8,6 +8,7 @@ import Footer from './Footer';
 import SearchImages from './SearchImages';
 import MobileHeader from './MobileHeader';
 import CreateCard from './CreateCard';
+import Cards from './Cards';
 
 
 
@@ -23,7 +24,9 @@ function Hero(props) {
     <Routes>
       <Route path='following' element={<Following></Following>}></Route>
       <Route path='search-images' element={<SearchImages></SearchImages>}></Route>
-      <Route path='create-card' element={<CreateCard></CreateCard>}></Route>
+      <Route path='create-card' element={<CreateCard formData={props.formData} setFormData={props.setFormData} ></CreateCard>}></Route>
+      <Route path='cards' element={<Cards formData={props.formData} setFormData={props.setFormData}></Cards>}></Route>
+
     </Routes>
     
     <Footer></Footer>

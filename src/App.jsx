@@ -9,14 +9,17 @@ import Hero from './Components/Hero'
 
 function App() {
   const [show, setShow] = useState(true);
-  const[showMenu,setShowMenu]=useState(false);
-  
+  const [showMenu, setShowMenu] = useState(false);
+  const [formData, setFormData] = useState([]);
+
+
 
   return (
     <BrowserRouter>
       <Sidebar show={show} setShow={setShow}></Sidebar>
       <div className='flex flex-col items-end h-screen '>
-        <Hero show={show} showMenu={showMenu} setShowMenu={setShowMenu}></Hero>
+        <Hero show={show} showMenu={showMenu} setShowMenu={setShowMenu} formData={formData} setFormData={setFormData}></Hero>
+
       </div>
 
     </BrowserRouter>

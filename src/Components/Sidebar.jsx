@@ -11,7 +11,7 @@ function Sidebar(props) {
         { option: "Your Work", to: "your-work" },
         { option: "Search Images", to: "search-images" },
         { option: "Create Card", to: "create-card" },
-        { option: "Pinned Items", to: "pinned-items" },
+        { option: "Cards", to: "cards" },
         { option: "Following", to: "following" },
         { option: "Trending", to: "trending" },
         { option: "Challenges", to: "challenges" },

@@ -35,7 +35,7 @@ function Footer() {
                 type="text"
                 placeholder="username@site.com"
                 className="input input-bordered max-[739px]:text-xs max-[739px]:w-[100%] max-[739px]:py-0 px-2   join-item " />
-              <button className="font-semibold bg-yellow-400 max-[739px]:text-xs join-item max-[739px]:p-0 text-black max-[739px]:px-2">Subscribe</button>
+              <button className="font-semibold bg-yellow-400 max-[739px]:text-xs join-item max-[739px]:p-0 px-2 text-black max-[739px]:px-2">Subscribe</button>
             </div>
            
            
