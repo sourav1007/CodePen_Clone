@@ -10,7 +10,7 @@ function Sidebar(props) {
     const optionsArray = [
         { option: "Your Work", to: "your-work" },
         { option: "Search Images", to: "search-images" },
-        { option: "To Do", to: "todo" },
+        { option: "Create Card", to: "create-card" },
         { option: "Pinned Items", to: "pinned-items" },
         { option: "Following", to: "following" },
         { option: "Trending", to: "trending" },
