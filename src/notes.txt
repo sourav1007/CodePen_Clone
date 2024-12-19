@@ -1,0 +1,20 @@
+ <div className='text-white w-full my-1 '>
+                    <Link to="your-work"> <div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem] '>Your Work</div></Link>
+                    <Link to="search-images"><div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem]'>Search Images</div></Link>
+                    <Link to="todo"><div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem]'>To Do</div></Link>
+                    <Link to="pinned-items"> <div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem] '>Pinned Items</div></Link>
+
+                </div>
+                <div className='text-white w-full my-1'>
+
+                    <Link to="following"> <div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem] '>Following</div></Link>
+                    <Link to="trending"> <div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem] '>Trending</div></Link>
+                    <Link to="challenges"> <div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem] '>Challenges</div>
+                    </Link>
+                    <Link to="spark"> <div className='my-1 px-7 py-2 cursor-pointer hover:bg-slate-950 text-[1.1rem] '>Spark</div></Link>
+                </div>
+
+                <div className='text-white  hover:bg-slate-950 cursor-pointer w-full my-1 px-7 py-2 text-[1.1rem]'>
+                    Codepen<span className='bg-yellow-400 px-2 text-center text-xs rounded-sm ml-2 font-bold text-black'>PRO</span>
+
+                </div>
