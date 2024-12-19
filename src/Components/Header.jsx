@@ -39,7 +39,7 @@ function Header(props) {
         </div>
 
       </div>
-      <div className=' lg:hidden w-full flex justify-between  items-center bg-black p-2'>
+      <div className=' lg:hidden w-full flex justify-between max-[739px]:gap-2  items-center bg-black p-2'>
         <div>
           <FaCodepen className='text-4xl text-white' />
         </div>
@@ -56,8 +56,8 @@ function Header(props) {
           <button className=' p-3 text-white  bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-green-500 rounded-sm'>Trending</button>
         </div>
         <div className='w-[45%] md:w-[25%] relative'>
-          <input className='px-4 pl-8 rounded-md bg-[#252830] py-3 font-semibold w-full' type="text" placeholder='Search CodePen...' />
-          <IoSearch className='text-gray-400 absolute text-xl top-4 left-2 cursor-pointer' />
+          <input className='px-4 pl-8 rounded-md bg-[#252830] py-3 font-semibold w-full max-[739px]:text-xs' type="text" placeholder='Search CodePen...' />
+          <IoSearch className='text-gray-400 absolute max-[739px]:text-lg max-[739px]:top-[0.75rem] text-xl top-4 left-2 cursor-pointer' />
 
         </div>
         <div>

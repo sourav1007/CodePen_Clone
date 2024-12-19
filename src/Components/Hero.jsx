@@ -16,7 +16,7 @@ function Hero(props) {
   const show=props.show;
   return (
     <>
-    <div className={ `${show ? "lg:w-[87vw]" : "lg:w-full"} w-full  duration-300 flex  flex-col relative justify-between h-full`}>
+    <div className={ `${show ? "lg:w-[87vw]" : "lg:w-full"} w-full  duration-300 flex overflow-auto  flex-col relative justify-between h-full`}>
       <Header setShowMenu={props.setShowMenu} showMenu={props.showMenu}></Header>
       <MobileHeader setShowMenu={props.setShowMenu} showMenu={props.showMenu}></MobileHeader>
       

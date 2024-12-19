@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Sidebar show={show} setShow={setShow}></Sidebar>
-      <div className='flex flex-col items-end h-screen'>
+      <div className='flex flex-col items-end h-screen '>
         <Hero show={show} showMenu={showMenu} setShowMenu={setShowMenu}></Hero>
       </div>
 
