@@ -10,6 +10,7 @@ import MobileHeader from './MobileHeader';
 import CreateCard from './CreateCard';
 import Cards from './Cards';
 import Pen from './Pen';
+import Home from './Home';
 
 
 
@@ -23,6 +24,8 @@ function Hero(props) {
       <MobileHeader setShowMenu={props.setShowMenu} showMenu={props.showMenu } footerRef={props.footerRef} show={props.show} setShow={props.setShow} ></MobileHeader>
       
     <Routes>
+    <Route path='/' element={<Home></Home>}></Route>
+
       <Route path='following' element={<Following></Following>}></Route>
       <Route path='search-images' element={<SearchImages></SearchImages>}></Route>
       <Route path='create-card' element={<CreateCard formData={props.formData} setFormData={props.setFormData} ></CreateCard>}></Route>

@@ -39,7 +39,7 @@ function Pen() {
                   {num===3 && <Result html={html} css={css} js={js}></Result>}
 
                 </div>
-               <div className='hidden'>
+               <div className='hidden md:block'>
                <Result  html={html} css={css} js={js}></Result>
 
                </div>
