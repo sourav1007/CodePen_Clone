@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useState } from 'react'
 import Sidebar from './Components/Sidebar'
 import Header from './Components/Header'
@@ -8,17 +8,19 @@ import Hero from './Components/Hero'
 
 
 function App() {
+  const footerRef=useRef();
   const [show, setShow] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
   const [formData, setFormData] = useState([]);
+  console.log(footerRef.current);
 
 
 
   return (
     <BrowserRouter>
-      <Sidebar show={show} setShow={setShow}></Sidebar>
+      <Sidebar footerRef={footerRef} show={show} setShow={setShow} ></Sidebar>
       <div className='flex flex-col items-end h-screen '>
-        <Hero show={show} showMenu={showMenu} setShowMenu={setShowMenu} formData={formData} setFormData={setFormData}></Hero>
+        <Hero show={show} setShow={setShow} showMenu={showMenu} setShowMenu={setShowMenu} formData={formData} setFormData={setFormData} footerRef={footerRef}></Hero>
 
       </div>
 

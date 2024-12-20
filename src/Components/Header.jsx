@@ -8,11 +8,6 @@ import { FaAngleDown } from "react-icons/fa6";
 import { FaCodepen } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-
-
-
-
-
 function Header(props) {
   
 
@@ -49,6 +44,7 @@ function Header(props) {
         
         <div onClick={()=>{
             console.log("clickedd")
+            props.footerRef.current.classList.remove("hidden");
             props.setShowMenu(!props.showMenu);
             console.log(props.showMenu);
           }} className='flex bg-gray-700  px-[0.20rem] md:px-[0.30rem] py-3 text-white rounded-md'>

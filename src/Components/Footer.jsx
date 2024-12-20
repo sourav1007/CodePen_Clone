@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Footer() {
+function Footer(props) {
   return (
-    <div >
+    <div ref={props.footerRef}  >
       <footer className="footer max-[739px]:leading-3  max-[739px]:p-3 gap-y-3 bg-black text-base-content px-16 py-5 flex flex-wrap justify-between ">
         <nav>
           <h6 className="footer-title ">Services</h6>
