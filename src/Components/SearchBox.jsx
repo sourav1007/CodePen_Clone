@@ -23,7 +23,7 @@ function SearchBox(props) {
 
   return (
     <div className='flex bg-[#383434] p-2 m-4'>
-      <input ref={props.name} onInput={search} className='px-2 py-1 text-white outline-none' type="text" placeholder='Search Item' />
+      <input ref={props.name} onInput={search} className='px-2 py-1 text-white outline-none' type="text" placeholder='Search Item by Id' />
   
     </div>
   )
