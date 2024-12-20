@@ -12,7 +12,7 @@ function App() {
   const [show, setShow] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
   const [formData, setFormData] = useState([]);
-  console.log(footerRef.current);
+
 
 
 

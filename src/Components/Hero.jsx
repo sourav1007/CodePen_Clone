@@ -15,6 +15,7 @@ import Pen from './Pen';
 
 
 function Hero(props) {
+  
   return (
     <>
     <div className={ `${props.show ? "lg:w-[87vw]" : "lg:w-full"} w-full  duration-300 flex overflow-auto  flex-col relative justify-between h-full`}>

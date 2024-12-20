@@ -19,9 +19,9 @@ function Header(props) {
 
       <div className=' lg:flex hidden bg-black w-full justify-between   items-center py-[1rem] px-4 pl-10  '>
         <div className='flex gap-1'>
-          <button className='px-5 py-2 text-white border-b-2 bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-gray-500 rounded-sm'>Your Work</button>
-          <button className='px-5 py-2 text-white border-b-2 bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-gray-500 rounded-sm'>Following</button>
-          <button className='px-5 py-2 text-white border-b-2 bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-gray-500 rounded-sm'>Trending</button>
+          <Link to="your-work"><button className='px-5 py-2 text-white border-b-2 bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-gray-500 rounded-sm'>Your Work</button></Link>
+          <Link to="following"><button className='px-5 py-2 text-white border-b-2 bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-gray-500 rounded-sm'>Following</button></Link>
+          <Link to="trending"><button className='px-5 py-2 text-white border-b-2 bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-gray-500 rounded-sm'>Trending</button></Link>
         </div>
         <div className="search w-[25%] relative">
           <IoSearch className='text-white absolute text-xl top-4 left-3 cursor-pointer' />
