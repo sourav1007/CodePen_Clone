@@ -39,8 +39,10 @@ function Pen() {
                   {num===3 && <Result html={html} css={css} js={js}></Result>}
 
                 </div>
-               
-                    <Result html={html} css={css} js={js}></Result>
+               <div className='hidden'>
+               <Result  html={html} css={css} js={js}></Result>
+
+               </div>
                 
                 
                 {/* Preview Section */}
