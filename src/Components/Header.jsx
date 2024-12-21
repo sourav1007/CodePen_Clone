@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { IoSearch } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-
+import MobileHeader from './MobileHeader';
 import { BsFillPinFill } from "react-icons/bs";
 import { FaRegSmileWink } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa6";
@@ -9,7 +9,7 @@ import { FaCodepen } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header(props) {
-  
+
 
 
 
@@ -35,20 +35,30 @@ function Header(props) {
         </div>
 
       </div>
+
+
+
+{/* _________________________________________________________________________________________________________ */}
+
+
+
+
+
+
       <div className=' lg:hidden w-full flex justify-between max-[739px]:gap-2  items-center bg-black p-2'>
         <Link to="/">
-        <div>
-          <FaCodepen className='text-4xl text-white' />
-        </div>
+          <div>
+            <FaCodepen className='text-4xl text-white' />
+          </div>
         </Link>
-        
-        <div onClick={()=>{
-            console.log("clickedd")
-            props.footerRef.current.classList.remove("hidden");
-            props.setShowMenu(!props.showMenu);
-            console.log(props.showMenu);
-          }} className='flex bg-gray-700  px-[0.20rem] md:px-[0.30rem] py-3 text-white rounded-md'>
-          <GiHamburgerMenu  className='text-xl' /><FaAngleDown />
+
+        <div onClick={() => {
+          console.log("clickedd")
+          props.footerRef.current.classList.remove("hidden");
+          props.setShowMenu(!props.showMenu);
+          console.log(props.showMenu);
+        }} className='flex bg-gray-700  px-[0.20rem] md:px-[0.30rem] py-3 text-white rounded-md'>
+          <GiHamburgerMenu className='text-xl' /><FaAngleDown />
         </div>
         <div className='md:flex md:w-[45%] justify-center gap-1  hidden  '>
           <button className=' p-3 text-white  bg-gray-700 hover:bg-[#1E1F26] border-transparent hover:border-b-2 hover:border-green-500 rounded-sm'>Your Work</button>
@@ -66,6 +76,7 @@ function Header(props) {
         <div>
           <button className=' rounded-[5px]  text-white   p-3  bg-[#2E8CA2]'><FaRegSmileWink className='text-black text-xl' /></button>
         </div>
+        <MobileHeader setShowMenu={props.setShowMenu} showMenu={props.showMenu} footerRef={props.footerRef} show={props.show} setShow={props.setShow} ></MobileHeader>
 
       </div>
 

@@ -22,7 +22,7 @@ function MobileHeader(props) {
     const showMobileHeader = "left-[0%] ";
     const hideMobileHeader = "left-[-100%] "
     return (
-        <div className={`w-[60%] md:w-[30%] h-[60%] md:top-[65px] top-[7%] duration-500 overflow-auto lg:hidden   absolute ${props.showMenu ? showMobileHeader : hideMobileHeader} z-30 bg-[#252830]`}>
+        <div className={`w-[60%] md:w-[30%] h-[60%] md:top-[65px] min-[412px]:top-[6.5%] [@media(min-width:412px)_and_(max-width:767px)]:top-[9%] top-[9%] duration-500 overflow-auto lg:hidden   absolute ${props.showMenu ? showMobileHeader : hideMobileHeader} z-30 bg-[#252830]`}>
             <div className='p-6 w-full flex flex-col items-start gap-[1px]'>
                 <h2 className='text-[10px] text-gray-300 mb-2'>CREATE</h2>
                 <Link onClick={() => {
