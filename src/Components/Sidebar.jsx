@@ -31,7 +31,7 @@ function Sidebar(props) {
     return (
         <>
             <div className={` ${props.show ? showSideBar : hideSideBar} hidden  lg:flex absolute duration-300 h-screen w-[13vw] z-10  `}>
-                <div className={`bg-gray-700 ${props.show ? "opacity-100" : "opacity-50"} w-10 hover:bg-[#70768E] rounded-tr-md rounded-br-md text-white relative left-[12rem] top-8  flex  cursor-pointer px-1 py-2`} onClick={() => { props.setShow(!props.show);
+                <div className={`bg-gray-700 ${props.show ? "opacity-100" : "opacity-50"} w-10 hover:bg-[#70768E] rounded-tr-md rounded-br-md text-white relative left-[11rem] top-8  flex  cursor-pointer px-1 py-2`} onClick={() => { props.setShow(!props.show);
                                         props.footerRef.current.classList.remove("hidden");
 
                   }}>

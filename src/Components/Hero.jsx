@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Footer from './Footer'
 import Header from './Header';
 
 import { Route, Routes } from 'react-router-dom';
 import Following from './Following';
-import Footer from './Footer';
+
 import SearchImages from './SearchImages';
 
 import CreateCard from './CreateCard';
@@ -26,16 +26,16 @@ function Hero(props) {
 
           <Routes>
             <Route path='/' element={<Home></Home>}></Route>
-
             <Route path='following' element={<Following></Following>}></Route>
             <Route path='search-images' element={<SearchImages></SearchImages>}></Route>
             <Route path='create-card' element={<CreateCard formData={props.formData} setFormData={props.setFormData} ></CreateCard>}></Route>
             <Route path='cards' element={<Cards formData={props.formData} setFormData={props.setFormData}></Cards>}></Route>
             <Route path='pen' element={<Pen></Pen>}></Route>
-
           </Routes>
-
           <Footer footerRef={props.footerRef}></Footer>
+
+
+         
         
 
 
