@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { IoSearch } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import MobileHeader from './MobileHeader';
@@ -38,7 +38,7 @@ function Header(props) {
 
 
 
-{/* _________________________________________________________________________________________________________ */}
+      {/* _________________________________________________________________________________________________________ */}
 
 
 
@@ -56,7 +56,7 @@ function Header(props) {
           console.log("clickedd")
           props.footerRef.current.classList.remove("hidden");
           props.setShowMenu(!props.showMenu);
-          console.log(props.showMenu);
+
         }} className='flex bg-gray-700  px-[0.20rem] md:px-[0.30rem] py-3 text-white rounded-md'>
           <GiHamburgerMenu className='text-xl' /><FaAngleDown />
         </div>
@@ -76,6 +76,10 @@ function Header(props) {
         <div>
           <button className=' rounded-[5px]  text-white   p-3  bg-[#2E8CA2]'><FaRegSmileWink className='text-black text-xl' /></button>
         </div>
+        <div onClick={()=>{
+          props.setShowMenu(!props.showMenu)
+        }}  className={`h-screen w-screen  absolute z-30 bg-[#000000bd] top-[100%] ${props.showMenu ? "block" : "hidden"}`}></div>
+
         <MobileHeader setShowMenu={props.setShowMenu} showMenu={props.showMenu} footerRef={props.footerRef} show={props.show} setShow={props.setShow} ></MobileHeader>
 
       </div>

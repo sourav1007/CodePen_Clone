@@ -22,13 +22,13 @@ function MobileHeader(props) {
     const showMobileHeader = "left-[0%] ";
     const hideMobileHeader = "left-[-100%] "
     return (
-        <div className={`w-[60%] md:w-[30%] h-[70vh] top-[100%] duration-500 overflow-auto lg:hidden   absolute ${props.showMenu ? showMobileHeader : hideMobileHeader} z-30 bg-[#252830]`}>
+        <div className={`w-[60%] md:w-[30%] h-[100vh] top-[100%] duration-500 overflow-auto lg:hidden   absolute ${props.showMenu ? showMobileHeader : hideMobileHeader} z-30 bg-[#252830]`}>
             <div className='p-6 w-full flex flex-col items-start gap-[1px]'>
                 <h2 className='text-[10px] text-gray-300 mb-2'>CREATE</h2>
                 <Link onClick={() => {
                     props.setShowMenu(!props.showMenu);
 
-                    props.footerRef.current.classList.add("hidden");
+                    
                 }} to="pen" className='flex items-center justify-center gap-6 text-white w-full px-2 py-3 text-center border-t-4 border-yellow-400  cursor-pointer bg-gray-700 hover:bg-black'>
                     <SiWindows /><div >Pen
                     </div>

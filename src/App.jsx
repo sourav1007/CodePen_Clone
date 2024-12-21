@@ -21,6 +21,7 @@ function App() {
       <Sidebar footerRef={footerRef} show={show} setShow={setShow} ></Sidebar>
       <div className='flex flex-col items-end h-screen '>
         <Hero show={show} setShow={setShow} showMenu={showMenu} setShowMenu={setShowMenu} formData={formData} setFormData={setFormData} footerRef={footerRef}></Hero>
+        
 
       </div>
 
