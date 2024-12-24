@@ -13,9 +13,7 @@ function Sidebar(props) {
         { option: "Create Card", to: "create-card" },
         { option: "Cards", to: "cards" },
         { option: "Following", to: "following" },
-        { option: "Trending", to: "trending" },
-        { option: "Challenges", to: "challenges" },
-        { option: "Spark", to: "spark" }
+        
     ];
 
     const showSideBar = "left-[0%] h-screen bg-[#1E1F26]  flex flex-col ";

@@ -12,9 +12,7 @@ function MobileHeader(props) {
         { option: "Create Card", to: "create-card" },
         { option: "Cards", to: "cards" },
         { option: "Following", to: "following" },
-        { option: "Trending", to: "trending" },
-        { option: "Challenges", to: "challenges" },
-        { option: "Spark", to: "spark" }
+      
     ];
 
 

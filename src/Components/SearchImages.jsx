@@ -99,7 +99,7 @@ function SearchImages() {
                                 src={item.urls.regular}
                                 alt={item.alt_description || "Image"}
                             />
-                            <div className='absolute top-[70%] left-[80%] md:top-[85%] bg-[#00000072] p-1 cursor-pointer rounded-sm '>
+                            <div className='absolute top-[70%] px-2 left-[80%] md:left-[85%] md:top-[85%] bg-[#00000072] p-1 cursor-pointer rounded-sm '>
                             <IoMdDownload className='text-white text-xl' />
 
                             </div>
