@@ -8,7 +8,7 @@ import Following from './Following';
 import SearchImages from './SearchImages';
 
 import CreateCard from './CreateCard';
-import Cards from './Cards';
+import Cards from './Cards'; 
 import Pen from './Pen';
 import Home from './Home';
 
@@ -20,10 +20,8 @@ function Hero(props) {
   return (
     <>
       
-        <div className={`${props.show ? "lg:w-[87vw]" : "lg:w-full"} w-full  duration-300 flex overflow-auto  flex-col relative justify-between h-full`}>
+        <div className={`${props.show ? "lg:w-[87vw]" : "lg:w-full"} w-full  justify-between  duration-300 flex overflow-auto  flex-col relative  h-screen`}>
           <Header setShowMenu={props.setShowMenu} showMenu={props.showMenu} footerRef={props.footerRef}></Header>
-          
-
           <Routes>
             <Route path='/' element={<Home></Home>}></Route>
             <Route path='following' element={<Following></Following>}></Route>

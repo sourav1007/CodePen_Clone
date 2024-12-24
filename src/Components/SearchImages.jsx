@@ -1,14 +1,16 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { IoMdDownload } from "react-icons/io";
+
 
 function SearchImages() {
     const [value, setValue] = useState("");
-   
+
     const [data, setData] = useState([]);
     const [page, setPage] = useState(1);
     const accessKey = `5kfg0kSbFfTDcCilAIui3cuLnnqTJCdXOB2SDPnqQr0`;
     let result;
-    
+
 
 
     async function fetchData(value, currentPage) {
@@ -17,7 +19,7 @@ function SearchImages() {
         try {
             const response = await axios.get(url);
             if (response.data.results.length !== 0) {
-                 result = await response.data.results;
+                result = await response.data.results;
                 setData((prev) => {
                     let val = [...prev, ...result];
                     return val;
@@ -26,7 +28,7 @@ function SearchImages() {
 
             } else {
 
-             
+
                 setData([]);
 
 
@@ -50,11 +52,11 @@ function SearchImages() {
         fetchData(value, nextPage);
 
     }
-  
+
 
     return (
         <div className="bg-black overflow-auto h-full">
-          
+
             <div className="p-2 text-center w-full">
                 <input
                     value={value}
@@ -73,9 +75,9 @@ function SearchImages() {
             <div className=' text-center mt-6'>
                 {
                     data.length === 0 && <h1>Search images of anything here</h1>
-                    
-                } 
-                
+
+                }
+
             </div>
 
 
@@ -84,12 +86,25 @@ function SearchImages() {
 
                 <div className="flex flex-wrap justify-center gap-y-5 gap-x-1 my-5">
                     {data.map((item, id) => (
-                        <img
-                            className="w-[30%] object-cover border-[1px] border-transparent cursor-pointer hover:border-[1px] hover:border-white rounded-md shadow-md"
-                            key={id}
-                            src={item.urls.regular}
-                            alt={item.alt_description || "Image"}
-                        />
+                        
+
+                        <div className=' backdrop relative w-[45%] md:w-[30%] text-center'>
+                            <div className=' absolute opacity-0 hover:opacity-100 duration-300 flex h-full w-full text-xs md:text-lg text-white bg-[#000000b8] justify-center items-center '>
+                                {item.alt_description}
+
+                            </div>
+                            <img
+                                className=" w-full h-full   border-[1px] border-transparent cursor-pointer hover:border-[1px] hover:border-white rounded-md shadow-md"
+                                key={id}
+                                src={item.urls.regular}
+                                alt={item.alt_description || "Image"}
+                            />
+                            <div className='absolute top-[70%] left-[80%] md:top-[85%] bg-[#00000072] p-1 cursor-pointer rounded-sm '>
+                            <IoMdDownload className='text-white text-xl' />
+
+                            </div>
+
+                        </div>
                     ))}
                 </div>
             )}
